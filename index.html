@@ -3,34 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorine Andronic</title>
     <link rel="stylesheet" href="./resources/css/index.css">
-    <title>Homepage</title>
 </head>
-<body class = "main">
-    <div class="buttons">
-        <a href="./index.html">Homepage</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./resume.html">Resume</a>
-    </div>
-    <div  class = "HomepageContent">
-        <h1 id = "Title">Sorine Andronic</h1>
-        <div class="Contact">
-            <h3>andronic@msu.edu</h3>
-        </div>
-        <img id="headshot" src="./resources/images/profileheadshot.jpg">
-        <div>
-            <p id= "About">I'm a driven 21-year-old student at Michigan State University pursuing a Dual Bachelor's of Science Degree in 
-                Computer Science and Mathematics with a minor in Business and a concentration in Artificial Intelligence. I'm highly passionate about three things: problem solving,
-                collaboration, and education. This summer, I’ll be joining Ford Motor Company as a Machine Learning Research Intern in their Research and Advanced Engineering division. 
-                In this role, I’ll be working with deep learning and computer vision, applying machine learning techniques to problems in Ford’s vehicle coatings department.
-                I also currently work as an Undergraduate Learning Assistant at MSU, teaching 
-                PHY 183: Physics for Scientists and Engineers. In this role I have been able to utilize my passionate
-                for project management, serving as a leader and resource as students solve challenging real world physics projects
-                weekly. Previously, I worked as a Knowledge Science Intern at Delta Dental of Michigan, 
-                where I gained experience applying data and technical tools in a professional setting.
+<body>
+
+    <nav>
+        <a href="./index.html" class="nav-logo">Sorine Andronic</a>
+        <ul class="nav-links">
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./resume.html">Résumé</a></li>
+        </ul>
+    </nav>
+
+    <div class="home-wrapper">
+
+        <!-- Left: intro text -->
+        <div class="home-intro">
+            <span class="hero-label">ML &amp; Software Engineering</span>
+            <h1>Sorine<br>Andronic</h1>
+            <p class="subtitle">Michigan State University &nbsp;·&nbsp; Class of 2025</p>
+            <p class="bio">
+                I'm a driven student at Michigan State University pursuing a Dual B.S. in Computer Science and Mathematics,
+                with a minor in Business and a concentration in Artificial Intelligence. This summer, I'll be joining
+                Ford Motor Company as a Machine Learning Research Intern in their Research and Advanced Engineering division,
+                applying deep learning and computer vision to problems in vehicle coatings. I'm also an Undergraduate
+                Learning Assistant for PHY 183, and previously interned at Delta Dental of Michigan as a Knowledge Science Intern.
             </p>
-        </div> 
+            <a href="mailto:andronic@msu.edu" class="contact-chip">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <polyline points="2,4 12,13 22,4"/>
+                </svg>
+                andronic@msu.edu
+            </a>
+        </div>
+
+        <!-- Right: headshot -->
+        <div class="home-photo">
+            <div class="headshot-frame">
+                <img id="headshot" src="./resources/images/profileheadshot.jpg" alt="Sorine Andronic">
+            </div>
+        </div>
+
+        <!-- Bottom highlights strip -->
+        <div class="home-highlights">
+            <div class="highlight-item">
+                <p class="h-label">Current Role</p>
+                <p class="h-value">ML Research Intern · Ford Motor Company</p>
+            </div>
+            <div class="highlight-item">
+                <p class="h-label">Degree</p>
+                <p class="h-value">B.S. Computer Science &amp; Mathematics · MSU</p>
+            </div>
+            <div class="highlight-item">
+                <p class="h-label">Focus</p>
+                <p class="h-value">Artificial Intelligence &amp; Deep Learning</p>
+            </div>
+        </div>
+
     </div>
-    
+
+    <footer>
+        <p>Built with HTML &amp; CSS &nbsp;·&nbsp; Hosted on GitHub Pages</p>
+    </footer>
+
 </body>
 </html>

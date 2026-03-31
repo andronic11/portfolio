@@ -3,73 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects — Sorine Andronic</title>
     <link rel="stylesheet" href="./resources/css/index.css">
 </head>
-<body class = "main">
-    <div class="buttons">
-        <a href="./index.html">Homepage</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./resume.html">Resume</a>
-    </div>
-    <div  class = "HomepageContent">
-        <h1 id = "Title">Projects</h1>
-        <div id = "Projects">
-            <h3>This Website!</h3>
-            <div>
-                <p>
-                    Creating this website was a project in itself, centered around developing and utilizing my skills with HTML, CSS, and GitHub.
-                     The goal was to create a clean but professional profile that could highlight information about myself and my career. I also wanted 
-                     to ensure it was optimized for mobile devices so that I could display it easily to others. Since this was my first major project using 
-                     these web development tools, I had my fair share of roadblocks. The main issue I faced came from a difficulty with a remote repository on GitHub, where the 
-                     main branch was corrupted or had broken references. While this was initially intimidating, I researched the problem and, with some perseverance, 
-                     learned how to create a temporary branch to preserve my changes, delete the problematic main branch, and then recreate it to restore the repository's integrity. 
-                     This experience tremendously grew my confidence using the terminal to handle issues in GitHub and my ability to use the platform as a whole. 
-                     I plan to incorporate what I have learned from this experience into my next projects on GitHub. I also plan to refine this site as 
-                     I continue to hone my capabilities with HTML, CSS, and soon JavaScript
-                </p>
+<body>
+
+    <nav>
+        <a href="./index.html" class="nav-logo">Sorine Andronic</a>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html" class="active">Projects</a></li>
+            <li><a href="./resume.html">Résumé</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <span class="hero-label">Selected Work</span>
+        <h1>Projects</h1>
+        <p>A collection of data science, machine learning, and software engineering projects each one a step forward in building real-world skills.</p>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <main class="projects-section">
+
+        <article class="project-card">
+            <div class="card-header">
+                <div class="card-title-group">
+                    <span class="card-number">01</span>
+                    <h2>This Website</h2>
+                </div>
             </div>
-             <h3>Yelp Restaurant Rating Prediction Model</h3>
-             <img id="YelpExample" src="./resources/images/YelpRatingModelExample.jpg">
-            <div>
-                <p>
-                    In this project, I developed a machine learning model to predict Yelp ratings for restaurants based on features such as review sentiment, price range, amenities, and more. 
-                    Using a dataset from Yelp that includes business attributes and review data, 
-                    I performed data cleaning, preprocessing, and exploratory analysis to identify key factors influencing restaurant ratings.
-                    I trained a multiple linear regression model, evaluated its performance with R² scores, and fine-tuned it for optimal prediction accuracy. 
-                    The goal of this project was to apply data science and machine learning techniques to solve a real-world problem: 
-                    understanding the factors that impact a restaurant's success based on customer feedback.
-                    This project demonstrates my ability to: 
-                    Process and analyze real-world data, Build and evaluate machine learning models, and Interpret model results to derive actionable insights.
-                    <a href = "https://github.com/andronic11/YelpRatingsPredict">View the Project on GitHub (Link to GitHub)</a>
-                </p>
+            <div class="card-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">GitHub</span>
             </div>
-            <h3>Machine Learning Movie Recommendation System</h3>
-            <div>
-                <p>
-                    In this project, I built a personalized movie recommendation system using a neural network implemented with PyTorch.
-                    The model learns from user rating data to identify patterns in viewing preferences and generate tailored movie suggestions.
-                    This involved preprocessing and structuring the dataset, designing and training a neural network architecture, and evaluating recommendation
-                    quality to refine the model's accuracy. The project gave me hands-on experience applying deep learning to a classic real-world problem
-                    in data science — building systems that can meaningfully personalize content for users. It also deepened my understanding of
-                    PyTorch workflows, including model design, loss functions, and iterative training.
-                    <a href="https://github.com/andronic11/Machine-Learning-Movie-Recommendation">View the Project on GitHub (Link to GitHub)</a>
-                </p>
+            <div class="card-body">
+                <p>Creating this website was a project in itself, centered around developing and utilizing my skills with HTML, CSS, and GitHub. 
+                    The goal was to create a clean but professional profile that could highlight information about myself and my career. 
+                    I also wanted to ensure it was optimized for mobile devices so that I could display it easily to others. 
+                    Since this was my first major project using these web development tools, I had my fair share of roadblocks. 
+                    The main issue I faced came from a difficulty with a remote repository on GitHub, where the main branch was corrupted or had broken references.
+                     While this was initially intimidating, I researched the problem and, with some perseverance, learned how to create a temporary branch to preserve my changes, delete the problematic main branch, and then recreate it to restore the repository's integrity. 
+                     This experience tremendously grew my confidence using the terminal and my ability to use GitHub as a whole. I plan to continue refining this site as I hone my capabilities.</p>
             </div>
-            <h3>Containerized Ride Share Application</h3>
-            <div>
-                <p>
-                    This project is a ride share web application built with Python and Flask, containerized using Docker to ensure a consistent and
-                    portable deployment environment. The application supports core ride share functionality and uses a database for persistent storage
-                    of user and ride data. Containerizing the app with Docker was a key focus of the project, giving me practical experience with
-                    building and managing Docker images, configuring containers, and understanding how containerization streamlines the development
-                    and deployment workflow. This project strengthened my backend development skills and introduced me to the fundamentals of
-                    DevOps practices, particularly around packaging and deploying applications in isolated, reproducible environments.
-                    <a href="https://github.com/andronic11/Containerized-Ride-Share-App">View the Project on GitHub (Link to GitHub)</a>
-                </p>
+        </article>
+
+        <article class="project-card">
+            <div class="card-header">
+                <div class="card-title-group">
+                    <span class="card-number">02</span>
+                    <h2>Yelp Restaurant Rating Prediction Model</h2>
+                </div>
+                <a href="https://github.com/andronic11/YelpRatingsPredict" target="_blank" class="github-link">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub
+                </a>
             </div>
-        </div>
-    </div>
-    
+            <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Linear Regression</span>
+                <span class="tag">Data Science</span>
+            </div>
+            <img class="card-image" src="./resources/images/YelpRatingModelExample.jpg" alt="Yelp Rating Model Example">
+            <div class="card-body">
+                <p>In this project, I developed a machine learning model to predict Yelp ratings for restaurants based on features such as review sentiment, price range, amenities, and more. 
+                    Using a dataset from Yelp that includes business attributes and review data, I performed data cleaning, preprocessing, and exploratory analysis to identify key factors influencing restaurant ratings. 
+                    I trained a multiple linear regression model, evaluated its performance with R² scores, and fine tuned it for optimal prediction accuracy. 
+                    This project demonstrates my ability to process and analyze real world data, build and evaluate machine learning models, and interpret model results to derive actionable insights.</p>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="card-header">
+                <div class="card-title-group">
+                    <span class="card-number">03</span>
+                    <h2>Machine Learning Movie Recommendation System</h2>
+                </div>
+                <a href="https://github.com/andronic11/Machine-Learning-Movie-Recommendation" target="_blank" class="github-link">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub
+                </a>
+            </div>
+            <div class="card-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Python</span>
+                <span class="tag">Neural Networks</span>
+            </div>
+            <div class="card-body">
+                <p>In this project, I built a personalized movie recommendation system using a neural network implemented with PyTorch. 
+                    The model learns from user rating data to identify patterns in viewing preferences and generate tailored movie suggestions. 
+                    This involved preprocessing and structuring the dataset, designing and training a neural network architecture, and evaluating recommendation quality to refine the model's accuracy. 
+                    The project gave me hands on experience applying deep learning to a classic real world problem in data science, building systems that can meaningfully personalize content for users. 
+                    It also deepened my understanding of PyTorch workflows, including model design, loss functions, and iterative training.</p>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="card-header">
+                <div class="card-title-group">
+                    <span class="card-number">04</span>
+                    <h2>Containerized Ride Share Application</h2>
+                </div>
+                <a href="https://github.com/andronic11/Containerized-Ride-Share-App" target="_blank" class="github-link">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub
+                </a>
+            </div>
+            <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Docker</span>
+                <span class="tag">DevOps</span>
+                <span class="tag">SQL</span>
+            </div>
+            <div class="card-body">
+                <p>This project is a ride share web application built with Python and Flask, containerized using Docker to ensure a consistent and portable deployment environment. 
+                    The application supports core ride share functionality and uses a database for persistent storage of user and ride data. Containerizing the app with Docker was a key focus of the project, 
+                    giving me practical experience with building and managing Docker images, configuring containers, and understanding how containerization streamlines the development and deployment workflow. 
+                    This project strengthened my backend development skills and introduced me to the fundamentals of DevOps practices, particularly around packaging and deploying applications in isolated, reproducible environments.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Built with HTML &amp; CSS &nbsp;·&nbsp; Hosted on GitHub Pages</p>
+    </footer>
+
 </body>
 </html>

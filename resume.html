@@ -3,17 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resune</title>
+    <title>Résumé — Sorine Andronic</title>
     <link rel="stylesheet" href="./resources/css/index.css">
 </head>
-<body class = "main">
-    <div class="buttons">
-        <a href="./index.html">Homepage</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./resume.html">Resume</a>
-    </div>
-    <div  class = "HomepageContent">
-        <img id = "resume" src="./resources/images/SorineAndronicResume.jpg">
-    </div>
+<body>
+
+    <nav>
+        <a href="./index.html" class="nav-logo">Sorine Andronic</a>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./resume.html" class="active">Résumé</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <span class="hero-label">Résumé</span>
+        <h1>Experience &amp; Education</h1>
+        <p>A snapshot of my academic background, internships, and technical skills.</p>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <main class="resume-section">
+        <div class="resume-frame">
+            <img id="resume" src="./resources/images/SorineAndronicResume.jpg" alt="Sorine Andronic Resume">
+            <div class="resume-actions">
+                <a href="./resources/images/SorineAndronicResume.jpg" download class="btn-outline">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Built with HTML &amp; CSS &nbsp;·&nbsp; Hosted on GitHub Pages</p>
+    </footer>
+
 </body>
 </html>
